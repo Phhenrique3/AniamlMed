@@ -1,12 +1,12 @@
-const urlApi =
-  "https://api-animal-dot-api-samples-423102.uc.r.appspot.com/api/animais";
+const urlApi = import.meta.env.VITE_API_URL;
+const apiToken = import.meta.env.VITE_API_TOKEN;
 
-export async function fidAll() {
+export async function findAll() {
   const requestInfo = {
     method: "GET",
     headers: {
       accept: "application/json",
-      Authorization: "Bearer 12119065",
+      Authorization: "Bearer " + apiToken,
     },
   };
 
@@ -19,4 +19,3 @@ export async function fidAll() {
     throw new Error("falha de consulta dados erro 400");
   }
 }
-

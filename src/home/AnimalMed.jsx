@@ -1,13 +1,13 @@
 import "../styles/App.css";
  import { useState } from "react";
-import { fidAll } from "../services/AnimalMedApi";
+import { findAll } from "../services/AnimalMedApi";
 
 function AnimalMed() {
   const [animais, setAnimais] = useState([]);
 
   const pesquisar = async () => {
     console.log("Consultando os animais cadastrados");
-    const dados = await fidAll();
+    const dados = await findAll();
     setAnimais(dados);
   }; 
 
