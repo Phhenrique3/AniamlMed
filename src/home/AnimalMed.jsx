@@ -57,7 +57,7 @@ function AnimalMed() {
         />
         Data Nascimento
         <input
-          placeholder="yyyy/mm/dd"
+          placeholder="yyyy-mm-dd"
           name="dataNascimento"
           id="dataNascimento"
           type="text"
@@ -73,7 +73,7 @@ function AnimalMed() {
         />
         Espécie
         <input
-          placeholder="Código da espécie (número)"
+          placeholder="um número"
           name="especie"
           id="especie"
           type="number"
